@@ -1,38 +1,105 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-header{
+  background-color: #222;
+  height: 50px;
+  padding: 20px;
+  color: white;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App-body{
+  /* padding: 20px; */
+  font-size: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.first-section{
+  background-color: #f5f5f5;
+  /* padding: 50px 0; */
+  height: 80vh;
   display: flex;
   flex-direction: column;
+  /* justify-content: center; */
+  padding-top: 80px;
+}
+.first-section-left{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.input-div{
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 60px;
+}
+.input-field{
+  /* width: 100%; */
+  /* margin-top: 30px; */
+  width: 40vw;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 1rem;
+}
+.submit-button{
+  background-color: #222;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 30px;
+  font-size: 1em;
+}
+.second-section{
+  background-color: #fff;
+  padding: 50px 0;
+}
+.third-section{
+  background-color: #f5f5f5;
+  padding: 50px 0;
+}
+.App-footer{
+  background-color: #222;
+  height: 50px;
+  padding: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+
+
+.mymodal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border: 1px solid #ccc;
+  background: #fff;
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.myoverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
 }
